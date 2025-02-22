@@ -33,8 +33,6 @@ sanitize_and_rename_filename() {
     fi
 }
 
-SCRIPT_NAME=$(basename "$0")
-
 # Use git ls-files to get a list of all tracked files.
 # This gives us a whitelist of files to process (relative paths)
 tracked_files=()
